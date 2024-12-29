@@ -1,7 +1,6 @@
 /* общие стили */
 /* затемнение фона */
 .images{
-    background-size: cover;
     position: relative;
     z-index: 0;
 }
@@ -16,10 +15,6 @@
     z-index: -1;
 }
 
-.address{
-    text-decoration: underline;
-}
-
 
 /* Делаем разметку для header */
 .header {
@@ -28,6 +23,7 @@
     padding: 92px 50px 96px 50px;
     align-items: center; /* центрирует по высоте */
 }
+
 /* базавая разметка для меню */
 .header_links-list {
     display: flex;
@@ -35,9 +31,13 @@
 }
 .header_links-list-item {
     line-height: 21px;
+    list-style: circle;
 }
 .header_links-list-item:first-child {
     list-style: none; /* Убираем кружок у первого элемента */
+}
+.header__link_active {
+    text-decoration: none;
 }
 
 .header_logo {
@@ -52,8 +52,11 @@
 }
 
 .header-address {
+    font-style: normal;
     justify-self: end;
     line-height: 24px;
+    list-style: circle;
+    font-size: 18px;
 }
 /*-----конец_header-----*/
 
@@ -63,6 +66,7 @@
 .cover {
     color: #FFF;
     padding: 165px 50px 50px 50px;
+    background-size: cover;
     background-image: url(../images/cover.jpg);
     background-position: center; /* Убедитесь, что изображение позиционируется */
 }
@@ -92,6 +96,7 @@
 }
 
 .btn-button {
+    cursor: pointer;
     border: 1px solid #FFF; /* Белая рамка */
     padding: 12px 32px 11px 31px;
     color: #FFF; /* Белый текст */
@@ -142,6 +147,7 @@
 .card_text {
     font-size: 20px;
     line-height: 24px;
+    text-decoration: none;
 }
 
 .text-link {
@@ -155,7 +161,6 @@
 .about {
     display: flex;
     margin: 120px 24px 0 24px;
-    height: 595px;
     position: relative; /* Для абсолютного позиционирования вложенных элементов */
 }
 .about_logo-wrapper {
@@ -174,14 +179,9 @@
 }
 .about_column_text {
     width: 693px;
-    height: 312px;
-    position: absolute; /* Абсолютное позиционирование */
-    bottom: 0; /* Привязка к нижнему краю секции */
-    right: 0;
-    box-sizing: border-box; /* Учитываем паддинги в ширину и высоту */
-    display: flex; /* Используем Flexbox */
-    flex-direction: column; /* Располагаем элементы по вертикали */
-    justify-content: flex-end; /* Прижимаем содержимое к нижнему краю */
+    margin-left: 72px;
+    margin-top: 130px;
+    font-size: 20px;
 }
 .about_title {
     padding: 0 0 100px 0;
@@ -193,19 +193,14 @@
 .about_text {
     line-height: 24px;
 }
-.about_text-one {
-    margin: 0 0 24px 0;
-    font-size: 20px;
-}
-.about_column_text-who {
-    font-size: 20px;
-}
+.about_text p {
+    margin-top: 24px;
+  }
 /*-----main-----*/
 
 /*-----footer-----*/
 .footer {
     display: flex;
-    height: 180px;
     margin-top: 180px;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -214,6 +209,8 @@
 .footer-address {
     margin-left: 50px;
     line-height: 24px;
+    font-style: normal;
+    font-size: 18px;
 }
 .footer_menu-list {
     list-style: none;
