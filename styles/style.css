@@ -18,8 +18,8 @@
 
 /* Делаем разметку для header */
 .header {
-    display: grid; /* .............. */
-    grid-template-columns: 2fr 2fr 1fr; /* разделяет блок на ячейки */
+    display: grid;
+    grid-template-columns: 1.9fr 1fr 1.9fr;
     padding: 92px 50px 96px 50px;
     align-items: center; /* центрирует по высоте */
 }
@@ -28,6 +28,7 @@
 .header_links-list {
     display: flex;
     gap: 30px;
+    font-size: 18px;
 }
 .header_links-list-item {
     line-height: 21px;
@@ -42,21 +43,22 @@
 
 .header_logo {
     display: block;
-    width: 148px;
+    width: 140px;
     height: 105px;
     align-items: center;
+    justify-self: center;
 }
 .header_logo-image {
     width: 100%;
-    margin-left: 50%;
 }
 
 .header-address {
     font-style: normal;
     justify-self: end;
-    line-height: 24px;
     list-style: circle;
     font-size: 18px;
+    line-height: 24px;
+    width: 235px;
 }
 /*-----конец_header-----*/
 
@@ -79,18 +81,21 @@
 }
 .aligned-text_center {
     text-align: center;
+    margin-top: 21px;
+    margin-left: 30px;
 }
 .aligned-text_right {
     text-align: right;
+    margin-top: 21px;
+    margin-right: -30px;
 }
 
 .cover_description {
-    display: flex;
     align-items: center;
-    padding: 106px 0 0;
+    padding-top: 105px;
     font-size: 22px;
     text-transform: uppercase;
-    word-spacing: 21px; /* Отступ между словами */
+    word-spacing: 18px; /* Отступ между словами */
     display: flex;
     justify-content: space-between; /* Разделяет элементы по краям */
 }
@@ -101,6 +106,7 @@
     padding: 12px 32px 11px 31px;
     color: #FFF; /* Белый текст */
     background-color: transparent; /* Убираем фон */
+    text-transform: uppercase;
 }
 
 /*-----секция_lots----- */
@@ -124,7 +130,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Верхний текст сверху, нижний снизу */
-    gap: 48px; /* Отступы между элементами */
+    gap: 35px; /* Отступы между элементами */
     height: 100%;
     padding: 48px 40px; /* Отступы: сверху и снизу 48px, по бокам 40px */
     background-size: cover;
@@ -143,6 +149,7 @@
     font-size: 22px;
     line-height: 26.4px;
     text-decoration: underline;
+    text-transform: uppercase;
 }
 .card_text {
     font-size: 20px;
@@ -154,6 +161,7 @@
     display: block; /* Это сделает ссылку блочным элементом, что позволяет лучше управлять её отступами */
     padding: 30px 0 0 40px; /* Отступы сверху и слева */
     line-height: 23.48px;
+    font-size: 20px;
 }
 
 
@@ -171,7 +179,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 34px;
+    margin-left: 46px;
 }
 .about_logo-image {
     width: 184px;
@@ -180,11 +189,11 @@
 .about_column_text {
     width: 693px;
     margin-left: 72px;
-    margin-top: 130px;
+    margin-top: 135px;
     font-size: 20px;
 }
 .about_title {
-    padding: 0 0 100px 0;
+    padding: 0 0 75px 0;
     text-transform: uppercase;
     line-height: 47px;
     font-size: 40px;
@@ -192,6 +201,7 @@
 }
 .about_text {
     line-height: 24px;
+    width: 690px;
 }
 .about_text p {
     margin-top: 24px;
@@ -205,6 +215,7 @@
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     font-size: 18px;
+    padding: 0 0 90px 0;
 }
 .footer-address {
     margin-left: 50px;
