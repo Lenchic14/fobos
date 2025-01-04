@@ -37,7 +37,8 @@
 .header_links-list-item:first-child {
     list-style: none; /* Убираем кружок у первого элемента */
 }
-.header__link_active {
+/*Активная позиция меню header и footer*/
+.menu_link_active {
     text-decoration: none;
 }
 
@@ -136,6 +137,9 @@
     background-size: cover;
     color: #FFF;
 }
+.card-link {
+    text-decoration: none;
+}
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
 }
@@ -154,7 +158,6 @@
 .card_text {
     font-size: 20px;
     line-height: 24px;
-    text-decoration: none;
 }
 
 .text-link {
