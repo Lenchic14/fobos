@@ -1,0 +1,602 @@
+/*-----Информационная шапка-----*/
+.header_info {
+    display: flex;
+    align-items: center;
+    /* Выравнивание элементов по вертикали */
+    justify-content: space-between;
+    /* Пространство между основными блоками */
+    padding: 12px 5px;
+
+    flex-wrap: wrap;
+    /* Чтобы элементы переносились при необходимости */
+}
+
+/*-----Стили для logo_2-----*/
+.header_logo_2 {
+    display: block;
+    width: 140px;
+    height: 110px;
+}
+
+.header_logo_2-image {
+    width: 100%;
+}
+
+/*-----Стили для контактов-----*/
+.address_header_city {
+    text-align: center;
+}
+
+.address_header {
+    text-decoration: none;
+    color: #333;
+}
+
+.address_header:hover {
+    color: #0072ab;
+}
+
+/*-----Стили для кнопок-----*/
+.header_info-btn {
+    display: flex;
+    gap: 15px;
+    /* Расстояние между кнопками */
+}
+
+.header_btn {
+    background-color: #0072ab;
+    width: 100px;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    /* Предотвращает перенос текста */
+    display: flex;
+    /* Делаем кнопки flex-контейнерами */
+    align-items: center;
+    /* Центрируем текст по вертикали */
+    justify-content: center;
+    /* Центрируем текст по горизонтали */
+    text-align: center;
+    /* На случай переноса текста */
+}
+
+.header_btn:hover {
+    background-color: #333;
+    /* Добавляет эффект при наведении */
+}
+
+.btn-info {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-----Информационная шапка (КОНЕЦ)-----*/
+
+/*-----Информационная шапка-----*/
+.header_info {
+    display: flex;
+    align-items: center;
+    /* Выравнивание элементов по вертикали */
+    justify-content: space-between;
+    /* Пространство между основными блоками */
+    padding: 12px 5px;
+}
+
+/*-----Стили для logo_2-----*/
+.header_logo_2 {
+    display: block;
+    width: 140px;
+    height: 110px;
+}
+
+.header_logo_2-image {
+    width: 100%;
+}
+
+/*-----Стили для контактов-----*/
+.address_header_city {
+    text-align: center;
+}
+
+.address_header {
+    text-decoration: none;
+    color: #333;
+}
+
+.address_header:hover {
+    color: #0072ab;
+}
+
+/*-----Стили для кнопок-----*/
+.header_info-btn {
+    display: flex;
+    gap: 15px;
+    /* Расстояние между кнопками */
+}
+
+.header_btn {
+    background-color: #0072ab;
+    width: 100px;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    /* Предотвращает перенос текста */
+    display: flex;
+    /* Делаем кнопки flex-контейнерами */
+    align-items: center;
+    /* Центрируем текст по вертикали */
+    justify-content: center;
+    /* Центрируем текст по горизонтали */
+    text-align: center;
+    /* На случай переноса текста */
+}
+
+.header_btn:hover {
+    background-color: #4a5568;
+    /* Добавляет эффект при наведении */
+}
+
+.btn-info {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* Для экранов до 768px (телефоны) */
+@media screen and (max-width: 768px) {
+    .header_info {
+        flex-direction: column;
+        /* Ставим элементы друг под другом */
+        align-items: center !important;
+        /* Центрируем все по горизонтали */
+        text-align: center;
+        /* Центрируем текст */
+        gap: 10px;
+        /* Расстояние между блоками */
+        padding: 10px;
+    }
+
+    .header_info-btn {
+        justify-content: center;
+        /* Центрируем кнопки */
+        flex-wrap: wrap;
+        /* Чтобы кнопки переносились при необходимости */
+    }
+
+    .header_btn {
+        width: auto;
+        /* Кнопки будут подстраиваться под текст */
+        min-width: 80px;
+        font-size: 12px;
+        /* Меньший размер на телефонах */
+        padding: 8px 12px;
+    }
+
+    .address_header_city {
+        margin-bottom: 10px;
+        /* Отступы между адресами */
+    }
+}
+
+
+/* Планшеты */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .header_logo_2 {
+        width: 120px;
+        height: 90px;
+    }
+
+    .header_btn {
+        width: 90px;
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .address_header {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/*-----Информационная шапка (КОНЕЦ)-----*/
+
+
+
+
+
+
+
+
+
+/*-----Меню сайта-----*/
+.menu {
+    background-color: #0072ab;
+    font-style: normal;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    display: block;
+}
+
+/* когда меню фиксированное */
+.menu.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/*-----Блок с пунктами меню-----*/
+.menu_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    /* Расстояние между пунктами меню */
+    justify-content: center;
+    /* Центрирует элементы по горизонтали */
+    text-align: center;
+    /* Выравнивание текста в пунктах меню */
+
+    display: flex;
+}
+
+/*-----Элементы меню-----*/
+.menu_item {
+    text-transform: uppercase;
+    position: relative;
+    /* Устанавливаем относительное позиционирование для родителя */
+    cursor: pointer;
+    padding: 8px 20px;
+    transition: background-color 0.3s;
+    flex: 0 1 auto;
+    /* Автоматическое изменение ширины пунктов */
+    white-space: nowrap;
+    /* Предотвращает перенос текста внутри пунктов */
+}
+
+.menu_item:hover {
+    background-color: #0082c3;
+}
+
+/*-----Блок с пунктами подменю-----*/
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #edeef0;
+    border: 2px solid #0072ab;
+    width: auto;
+    z-index: 10;
+    /* Убедитесь, что подменю находится выше других элементов */
+}
+
+.menu_item:hover .submenu {
+    display: flex;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.center_1 {
+    left: 0;
+    /* Центрирование */
+    transform: translateX(-20%);
+    /* Сдвиг на половину ширины подменю */
+}
+
+.center_2 {
+    left: 0;
+    /* Центрирование */
+    transform: translateX(-50%);
+    /* Сдвиг на половину ширины подменю */
+}
+
+/*-----Левая сторона подменю-----*/
+.submenu_left {
+    padding: 20px;
+    flex: 2;
+    text-align: left;
+}
+
+/*Картинка*/
+.submenu-image {
+    width: 300px;
+    height: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+/*Текст*/
+.submenu-description {
+    margin-top: 10px;
+    color: #000;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.submenu_left span {
+    color: #000;
+    text-transform: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/*Разделение*/
+.submenu-divider {
+    background-color: #575757;
+    font-size: 1px;
+}
+
+.submenu_item-divider {
+    background-color: #8faac8;
+    font-size: 0.2px;
+}
+
+/*Кнопка*/
+.submenu_btn {
+    margin-top: 10px;
+    background-color: #0072ab;
+    width: 40%;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    /* Предотвращает перенос текста */
+    display: flex;
+    /* Делаем кнопки flex-контейнерами */
+    align-items: center;
+    /* Центрируем текст по вертикали */
+    justify-content: center;
+    /* Центрируем текст по горизонтали */
+    text-align: center;
+    /* На случай переноса текста */
+}
+
+.submenu_btn:hover {
+    background-color: #4a5567;
+}
+
+
+/*-----Правая сторона подменю-----*/
+.submenu_right {
+    padding: 20px;
+    flex: 1;
+    display: grid;
+    /* Используем grid для управления расположением */
+    grid-template-columns: repeat(4, 1fr);
+    /* 5 элементов в строке */
+    gap: 20px;
+    /* Расстояние между элементами */
+}
+
+/*-----Элементы подменю-----*/
+.submenu_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.submenu_item:hover {
+    background-color: #fff;
+    /* Белый фон при наведении */
+    border-color: #0072ab;
+    /* Синие границы при наведении */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Легкая тень для эффекта */
+}
+
+/*Картинка*/
+.submenu_img {
+    width: 100px;
+    height: 100px;
+}
+
+/*Текст*/
+.submenu-text {
+    color: #000;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/*-----Меню сайта (КОНЕЦ)-----*/
+
+
+
+
+
+
+
+
+
+
+
+/* ----- Бургер-кнопка ----- */
+.menu_burger {
+    display: none;
+    /* по умолчанию скрыта на ПК */
+    justify-content: flex-end;
+    position: relative;
+    padding: 10px;
+}
+
+.burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.burger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+/* ----- Список бургер-меню ----- */
+.menu_burger_list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* меню занимает весь экран */
+    background: rgba(0, 114, 171, 0.9);
+    /* однотонный прозрачный фон */
+    overflow-y: auto;
+    /* скролл внутри меню */
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease, padding 0.5s ease;
+    flex-direction: column;
+    padding: 0 20px;
+    z-index: 1000;
+    list-style: none;
+}
+
+/* убираем затемнение за меню */
+.menu_burger_list::before {
+    display: none;
+}
+
+/* Крестик закрытия */
+.menu_burger_close {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: right;
+    padding: 10px 0;
+}
+
+/* активное состояние */
+.menu_burger_list.active {
+    max-height: 100vh;
+    opacity: 1;
+    transform: translateY(0);
+    padding: 15px 20px;
+}
+
+/* пункты меню */
+.menu_burger_item {
+    position: relative;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.menu_burger_item a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+    white-space: normal;
+    /* перенос строк */
+    word-wrap: break-word;
+    /* перенос длинных слов */
+    overflow-wrap: break-word;
+    /* поддержка новых браузеров */
+    line-height: 1.4;
+}
+
+.menu_burger_item a:hover {
+    color: #ffd700;
+}
+
+/* Подменю */
+.menu_burger_submenu {
+    overflow: visible;
+    flex-direction: column;
+    margin-top: 5px;
+    padding-left: 20px;
+    border-left: 2px solid #fff;
+    border-radius: 4px;
+    opacity: 1;
+    list-style: none;
+}
+
+.menu_burger_submenu li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    list-style: none;
+}
+
+.menu_burger_submenu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding-left: 10px;
+    transition: color 0.3s ease;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+}
+
+.menu_burger_submenu li a:hover {
+    color: #ffd700;
+}
+
+/* кнопка раскрытия подменю убирается */
+.submenu-toggle {
+    display: none;
+}
+
+/* фиксируем фон при открытом меню */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* ----- Адаптация ----- */
+@media (max-width: 992px) {
+    .menu_list {
+        display: none;
+    }
+
+    .menu_burger {
+        display: flex;
+    }
+}

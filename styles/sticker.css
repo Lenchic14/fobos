@@ -1,0 +1,32 @@
+.capabilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.capabilities h2 {
+    margin: 30px 0;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+}
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.capability {
+    width: 250px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+}
+.capability img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+}

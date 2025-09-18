@@ -1,0 +1,13 @@
+<!--
+    <section class="unysh">
+      <div class="unysh_text">
+        <span>Уважаемые посетители! В связи с нестабильной ситуацией цены уточняйте у менеджеров в разделе
+          "контакты"</span>
+      </div>
+      <div class="content">
+        <a href="https://уныш.рф/" target="_blank">
+          <img src="../images/unish/unish.jpg" alt="Описание картинки" class="rounded-lg w-full h-auto">
+        </a>
+      </div>
+    </section>
+-->

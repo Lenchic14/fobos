@@ -1,0 +1,63 @@
+.company {
+    margin-top: 15px;               /* Отступ сверху */
+    background-color: #edeef0;
+    padding: 40px 0;
+}
+
+.accordion-item {
+    border: none;           /* убираем стандартную рамку */
+    margin-bottom: 10px;
+    border-radius: 10px;    /* скругление углов */
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* тень */
+}
+
+.accordion-button {
+    background-color: #f8f9fa;  /* светлый фон */
+    color: #0033cc!important;
+    font-weight: bold;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #fff;
+    padding: 20px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    border-bottom: 1px solid #ddd; /* добавляем линию */
+}
+.accordion-item .accordion-body:last-child {
+    border-bottom: none; /* убираем линию у последнего блока */
+}
+
+.accordion-button::after {
+    /* изменим иконку */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 8a.5.5 0 0 1 .5-.5h12a.5.5 0 0 1 0 1h-12A.5.5 0 0 1 1.5 8z'/%3E%3C/svg%3E");
+}
+
+
+.accordion_center {
+    color: #0033cc;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+}
+
+.img_company {
+    width: 600px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    margin: 15px auto; /* центруем изображение */
+    display: block; /* делаем изображение блочным элементом */
+}

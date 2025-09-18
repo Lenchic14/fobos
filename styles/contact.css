@@ -1,0 +1,47 @@
+.contact {
+    background-color: #edeef0;
+}
+.contact_text {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Чтобы блоки выравнивались по верхнему краю */
+    gap: 20px; /* Отступ между блоками (можете изменить по желанию) */
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.text {
+    font-weight: bold;
+}
+.phons {
+    text-decoration: none;
+}
+
+.contact-block {
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.map {
+    width: 55%;
+    height: 400px;
+    margin-top: 10px;
+}

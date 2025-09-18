@@ -1,0 +1,31 @@
+.img1_souvenir {
+    background-image: url('../images/menu/souvenir/mugs.png'); /* Путь к изображению */
+}
+
+.img2_souvenir {
+    background-image: url('../images/menu/souvenir/trinkets.png'); /* Путь к изображению */
+}
+
+.img3_souvenir {
+    background-image: url('../images/menu/souvenir/pennants.png'); /* Путь к изображению */
+}
+
+.img4_souvenir {
+    background-image: url('../images/menu/souvenir/graverton.png'); /* Путь к изображению */
+}
+
+.img5_souvenir {
+    background-image: url('../images/menu/souvenir/caps.png'); /* Путь к изображению */
+}
+
+.img6_souvenir {
+    background-image: url('../images/menu/souvenir/pillowcases.png'); /* Путь к изображению */
+}
+
+.img7_souvenir {
+    background-image: url('../images/menu/souvenir/bags.png'); /* Путь к изображению */
+}
+
+.img8_souvenir {
+    background-image: url('../images/menu/souvenir/plates.png'); /* Путь к изображению */
+}

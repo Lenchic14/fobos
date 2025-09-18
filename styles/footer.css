@@ -1,0 +1,263 @@
+/*-----footer-----*/
+.footer {
+    display: flex;
+    flex-direction: column;
+    /* Размещаем элементы в колонку */
+    align-items: center;
+    /* Центрируем по горизонтали */
+    background-color: #0072ab;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer_info {
+    display: flex;
+    /* Используем flexbox для выравнивания элементов в одну строку */
+    justify-content: space-between;
+    /* Размещаем элементы с равными промежутками */
+    align-items: center;
+    /* Выравниваем элементы по вертикали по центру */
+    line-height: 18px;
+    background-color: #0082c3;
+    padding: 0 50px;
+    /* Уменьшаем отступы для лучшего центрирования */
+    width: 100%;
+    /* Задаем ширину 100% */
+}
+
+.footer-text {
+    margin-right: 10px;
+}
+
+.footer_social-list {
+    display: flex;
+    /* Используем flexbox для выравнивания списка соцсетей в одну строку */
+    list-style: none;
+    /* Убираем стандартные маркеры списка */
+    align-items: center;
+    padding: 0;
+    /* Убираем отступы списка */
+    margin: 0;
+    /* Убираем маргин для списка */
+}
+
+
+
+.footer_info-email {
+    display: flex;
+    /* Используем flexbox для выравнивания элементов формы в одну строку */
+    align-items: center;
+    /* Выравниваем элементы по вертикали по центру */
+}
+
+.footer_info-email .input {
+    border-radius: 50px 0 0 50px;
+    /* Скругляем только правую сторону */
+    padding: 3px 8px;
+    border: 0 !important;
+    margin-right: 0;
+    /* Убираем отступ между инпутом и кнопкой */
+}
+
+.footer_info-email .footer_btn {
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 0;
+    /* Убираем отступ между инпутом и кнопкой */
+    border-radius: 0 50px 50px 0;
+    /* Скругляем только левую сторону */
+    padding: 0px 8px;
+    border: 0 !important;
+    display: flex;
+    /* Для выравнивания содержимого кнопки */
+    align-items: center;
+    /* Выравниваем содержимое по центру */
+    background-color: #64bb4a;
+    /* Начальный цвет кнопки */
+    color: white;
+    /* Цвет текста кнопки */
+    transition: background-color 0.3s;
+    /* Плавный переход цвета */
+}
+
+/* Изменение цвета кнопки при наведении */
+.footer_info-email .footer_btn:hover {
+    background-color: #0072ab;
+    /* Цвет кнопки при наведении */
+}
+
+.footer_info-email .footer_btn img {
+    margin-right: 5px;
+    /* Отступ между иконкой и текстом в кнопке */
+    vertical-align: middle;
+    /* Выравнивание иконки по вертикали */
+    height: 20px;
+    /* Установите высоту иконки, если необходимо */
+}
+
+
+
+
+.footer_phons {
+    display: grid;
+    /* Используем grid для размещения элементов */
+    grid-template-columns: repeat(3, 1fr);
+    /* Три равные колонки */
+    justify-items: center;
+    /* Центрируем элементы в каждой колонке */
+    width: 100%;
+    /* Задаем ширину 100% */
+    align-items: center;
+    font-size: 18px;
+    padding: 25px 0 50px 0;
+    background-color: #0072ab;
+}
+
+.footer-address {
+    line-height: 24px;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.address {
+    color: #fff;
+    text-decoration: none;
+}
+
+.address:hover {
+    color: #00527a;
+}
+
+.address_phon_item {
+    margin: 20px 0;
+}
+
+
+.footer_end {
+    margin-top: auto;
+    /* Позволяет футеру оставаться внизу страницы */
+    background-color: #4a5568;
+    padding: 3px 0;
+    /* Отступы сверху и снизу */
+    text-align: center;
+    /* Центрирование текста */
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer_end-list {
+    display: inline-block;
+    /* Позволяет использовать text-align для центрирования */
+}
+
+
+.text_heading {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.footer-work_str {
+    margin-top: 25px;
+}
+
+.text_heading-bold {
+    font-weight: 500;
+}
+
+/* --- Общие стили футера --- */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #0072ab;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* Блок с контактами и рабочим временем */
+.footer_phons {
+    display: flex;
+    flex-direction: row;
+    /* ПК и планшеты */
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    padding: 25px 50px;
+    gap: 20px;
+    text-align: left;
+}
+
+/* Внутренние блоки */
+.footer-work,
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+/* Нижний футер */
+.footer_end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4a5568;
+    padding: 3px 0;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+/* --- Адаптация для телефонов --- */
+@media (max-width: 768px) {
+    .footer_phons {
+        flex-direction: column;
+        /* один столбик */
+        align-items: center;
+        /* центрируем по горизонтали */
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+        /* расстояние между блоками */
+    }
+
+    .footer-work,
+    .footer-address {
+        align-items: center;
+        /* центрируем контент внутри блока */
+        text-align: center;
+        width: 100%;
+        /* чтобы занимало всю ширину */
+    }
+
+    .footer_work_slv,
+    .footer-work_str {
+        margin-bottom: 15px;
+    }
+}
+
+
+/* --- Адаптация для планшетов --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer_phons {
+        flex-direction: row;
+        /* оставляем колонки */
+        justify-content: space-around;
+        /* немного сжимаем расстояние */
+        padding: 20px 30px;
+    }
+
+    .footer-work,
+    .footer-address {
+        font-size: 14px;
+        /* чуть меньше текста */
+    }
+}

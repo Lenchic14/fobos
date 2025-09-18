@@ -1,0 +1,32 @@
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.service-text-block {
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+}
+.service-text-block h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.service-text-block ul {
+    margin: 0 0 15px;
+    padding-left: 20px;
+}
+.service-text-block ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+}
+.service-text-block ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0072ab;
+    font-weight: bold;
+}

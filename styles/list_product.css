@@ -1,0 +1,492 @@
+.custom-caption-test {
+  display: flex;
+  /* Используем flexbox для расположения элементов */
+  flex-direction: column;
+  /* Устанавливаем направление колонок */
+  align-items: flex-start;
+  /* Выровнять элементы по началу */
+  background-color: rgba(244, 242, 243, 0.9);
+  /* Полупрозрачный фон */
+  color: #393229;
+  /* Цвет текста */
+  font-weight: 400;
+  line-height: 22px;
+  /* Жирность текста */
+  font-size: 18px;
+  /* Размер шрифта */
+  padding: 20px 20px;
+  /* Отступы внутри блока */
+  border-radius: 2px;
+  /* Закругляем края */
+  transform: translate(108%, 5%);
+  /* Центрируем по горизонтали и вертикали */
+  width: 550px;
+  font-family: OpenSans-Regular, sans-serif;
+}
+
+.caption-item {
+  display: flex;
+  /* Используем flexbox для расположения элементов в строку */
+  justify-content: space-between;
+  /* Распределяем пространство между элементами */
+  align-items: center;
+  /* Центруем по вертикали */
+  margin-bottom: 20px;
+  /* Отступ между строками */
+  width: 100%;
+  /* Занимаем всю ширину родительского блока */
+}
+
+.checkmark_glava {
+  font-size: 26px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #0072ab;
+}
+
+.checkmark {
+  margin-right: 10px;
+  border: 0px;
+  /* Отступ между текстом и кнопкой (20px) */
+}
+
+.checkmark::before {
+  content: "✔";
+  color: #0072ab;
+  /* синяя галочка */
+  font-weight: bold;
+  margin-right: 5px;
+  /* маленький отступ */
+}
+
+
+
+.section {
+  text-align: center;
+  padding: 20px;
+  background-color: #edeef0;
+  font-family: OpenSans-Regular, sans-serif;
+}
+
+.title_car {
+  text-decoration: none;
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 30px 100px;
+  align-items: stretch;
+  /* Все карточки будут одной высоты */
+}
+
+.cars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* чтобы кнопка была внизу */
+  text-align: center;
+  width: calc(25% - 10px);
+  box-sizing: border-box;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.naz {
+  min-height: 50px;
+  /* фиксируем высоту заголовка */
+}
+
+.naz_text {
+  min-height: 22px;
+  /* чтобы подзаголовки были на одном уровне */
+}
+
+.txt {
+  flex-grow: 1;
+  /* занимает всё оставшееся место, выравнивая карточки */
+  min-height: 100px;
+}
+
+.txt_plus {
+  margin-top: 5px;
+  min-height: 40px;
+  /* одинаковая высота блока с параметрами */
+}
+
+.button {
+  margin-top: auto;
+  /* кнопка всегда внизу карточки */
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 30px 100px;
+}
+
+
+.cars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(25% - 10px);
+  /* 4 карточки в ряд */
+}
+
+.card-zag {
+  width: 90%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.glav .podglav {
+  margin-top: 8px;
+  font-size: 16px;
+  max-width: 90%;
+}
+
+.image {
+  width: auto;
+  height: 180px;
+  background-size: contain;
+  /* Подгоняет изображение так, чтобы оно полностью помещалось в блок */
+  background-position: center;
+  /* Центрирует изображение */
+  background-repeat: no-repeat;
+  /* Отключаем повтор изображения, чтобы оно не повторялось */
+  border-radius: 2px;
+  margin-bottom: auto;
+}
+
+.images {
+  width: 200px;
+  height: 150px;
+  display: block;
+  /* превращаем в блочный элемент */
+  margin: 0 auto;
+  /* центрируем по горизонтали */
+}
+
+/* Эффект синей рамки при наведении */
+.card-link:hover {
+  box-shadow: 0 0 10px 2px rgba(0, 114, 171, 0.8);
+  /* Эффект расплывчатой синей рамки */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Стиль для ссылок */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.glav,
+.podglav {
+  text-align: left;
+  /* Выравнивание текста по левому краю */
+  width: 90%;
+  /* Чтобы текст не выходил за границы */
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+.glav {
+  color: #364657;
+  font-weight: bold;
+}
+
+.podglav {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+/* Фоновые изображения для каждой плашки */
+.img1 {
+  background-image: url('../images/menu/vizitka/vizitka.png');
+  /* Путь к изображению */
+}
+
+.img2 {
+  background-image: url('../images/menu/vizitka/3.png');
+  /* Путь к изображению */
+}
+
+.img3 {
+  background-image: url('../images/menu/vizitka/2.png');
+  /* Путь к изображению */
+}
+
+.img4 {
+  background-image: url('../images/menu/vizitka/4.png');
+  /* Путь к изображению */
+}
+
+.img5 {
+  background-image: url('../images/menu/vizitka/5.png');
+  /* Путь к изображению */
+}
+
+.img6 {
+  background-image: url('../images/menu/vizitka/6.png');
+  /* Путь к изображению */
+}
+
+.img7 {
+  background-image: url('../images/menu/vizitka/7.png');
+  /* Путь к изображению */
+}
+
+/* Медиа-запросы */
+@media (max-width: 1024px) {
+  .cars {
+    width: calc(33.33% - 10px);
+    /* 3 карточки в ряд на планшетах */
+  }
+}
+
+@media (max-width: 768px) {
+  .cars {
+    width: calc(50% - 10px);
+    /* 2 карточки в ряд на маленьких экранах */
+  }
+}
+
+@media (max-width: 480px) {
+  .cars {
+    width: 100%;
+    /* 1 карточка в ряд на мобильных */
+  }
+}
+
+
+/* Общий контейнер */
+.product-tech {
+  background: #fff;
+  padding: 20px 20px;
+}
+
+.product-tech .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Заголовок секции */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+  color: #333;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #0072ab;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* Карточка характеристик */
+.tech-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tech-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Список характеристик */
+.tech-specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 30px;
+  margin-bottom: 25px;
+}
+
+.spec-item {
+  padding: 12px 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.spec-item dt {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.spec-item dd {
+  margin: 0;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Примечания */
+.tech-notes {
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #e3e3e3;
+  padding-top: 15px;
+}
+
+.tech-notes p {
+  margin: 10px 0;
+}
+
+.tech-notes strong {
+  color: #222;
+}
+
+/*Картинка*/
+.tech-image {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.tech-image img {
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+
+/* Премиум */
+.slider-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-slider img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.thumbs-slider {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  /* Центрируем миниатюры */
+}
+
+.thumbs-slider .swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* Расстояние между миниатюрами */
+}
+
+.thumbs-slider .swiper-slide {
+  width: 100px !important;
+  height: 60px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  flex-shrink: 0;
+  /* Чтобы слайды не сжимались */
+}
+
+.thumbs-slider .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.thumbs-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+
+/* На мобильных устройствах делаем все элементы вертикальными */
+@media (max-width: 768px) {
+  .tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* центрируем содержимое */
+    padding: 20px;
+  }
+
+  .tech-card-title {
+    text-align: center;
+  }
+
+  .tech-specs {
+    display: flex;
+    /* убираем сетку */
+    flex-direction: column;
+    gap: 10px;
+    /* отступ между характеристиками */
+    width: 100%;
+  }
+
+  .spec-item {
+    width: 100%;
+    /* карточки характеристик занимают всю ширину */
+  }
+
+  .tech-notes {
+    text-align: left;
+    /* текст примечаний по левому краю */
+    width: 100%;
+  }
+
+  .tech-image img {
+    max-width: 80%;
+    /* подгоняем изображение под размер блока */
+    height: auto;
+  }
+}
+
+
+
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 20px 50px;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.price-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}

@@ -1,0 +1,120 @@
+/* Фоновые изображения для каждой плашки operational_servis*/
+.img1_operational_servis {
+    background-image: url('../images/menu/services/doc_print.png'); /* Путь к изображению */
+}
+
+.img2_operational_servis {
+    background-image: url('../images/menu/services/doc_copy.png'); /* Путь к изображению */
+}
+
+.img3_operational_servis {
+    background-image: url('../images/menu/services/doc_scan.png'); /* Путь к изображению */
+}
+
+.img4_operational_servis {
+    background-image: url('../images/menu/services/drawing.png'); /* Путь к изображению */
+}
+
+.img5_operational_servis {
+    background-image: url('../images/menu/services/posters.png'); /* Путь к изображению */
+}
+
+.img6_operational_servis {
+    background-image: url('../images/menu/services/stitching.png'); /* Путь к изображению */
+}
+
+.img7_operational_servis {
+    background-image: url('../images/menu/services/lamination.png'); /* Путь к изображению */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.service-text-block {
+    max-width: 800px;
+    margin: auto;
+    font-size: 16px;
+}
+.service-text-block h3 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.service-text-block ul {
+    margin: 0 0 15px;
+    padding-left: 20px;
+}
+.service-text-block ul li {
+    list-style: none;
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+}
+.service-text-block ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #0072ab;
+    font-weight: bold;
+}
+
+
+
+.quote-block {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px 25px;
+    background-color: #f0f4ff;
+    border-left: 4px solid #0072ab;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    font-style: italic;
+    border-radius: 10px;
+}
+.quote-block strong {
+    color: #0072ab;
+    font-weight: 600;
+}
+
+.journal-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 40px 0;
+  gap: 40px;
+}
+
+.journal-column {
+  flex: 1;
+  max-width: 400px;
+  text-align: left;
+}
+
+.journal-column strong {
+  text-align: center;
+}
+
+.journal-column img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.journal-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.journal-divider {
+  width: 2px;
+  background-color: #ccc;
+  height: 100%;
+  min-height: 250px;
+}

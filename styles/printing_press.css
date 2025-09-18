@@ -1,0 +1,19 @@
+.img1_printing_press {
+    background-image: url('../images/menu/printing_press/offset.png'); /* Путь к изображению */
+}
+
+.img2_printing_press {
+    background-image: url('../images/menu/printing_press/digital.png'); /* Путь к изображению */
+}
+
+.img3_printing_press {
+    background-image: url('../images/menu/printing_press/risography.png'); /* Путь к изображению */
+}
+
+.img4_printing_press {
+    background-image: url('../images/menu/printing_press/newspaper.png'); /* Путь к изображению */
+}
+
+.img5_printing_press {
+    background-image: url('../images/menu/printing_press/widescreen.png'); /* Путь к изображению */
+}
