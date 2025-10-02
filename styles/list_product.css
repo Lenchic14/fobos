@@ -1,27 +1,5 @@
 .custom-caption-test {
-  display: flex;
-  /* Используем flexbox для расположения элементов */
-  flex-direction: column;
-  /* Устанавливаем направление колонок */
-  align-items: flex-start;
-  /* Выровнять элементы по началу */
-  background-color: rgba(244, 242, 243, 0.9);
-  /* Полупрозрачный фон */
-  color: #393229;
-  /* Цвет текста */
-  font-weight: 400;
-  line-height: 22px;
-  /* Жирность текста */
-  font-size: 18px;
-  /* Размер шрифта */
-  padding: 20px 20px;
-  /* Отступы внутри блока */
-  border-radius: 2px;
-  /* Закругляем края */
-  transform: translate(108%, 5%);
-  /* Центрируем по горизонтали и вертикали */
-  width: 550px;
-  font-family: OpenSans-Regular, sans-serif;
+  display: none;
 }
 
 .caption-item {
@@ -59,7 +37,24 @@
   /* маленький отступ */
 }
 
-
+/* Только на экранах >=1440px показываем */
+@media (min-width: 1440px) {
+  .custom-caption-test {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(244, 242, 243, 0.9);
+    color: #393229;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 18px;
+    padding: 20px 20px;
+    border-radius: 2px;
+    transform: translate(108%, 5%);
+    width: 550px;
+    font-family: OpenSans-Regular, sans-serif;
+  }
+}
 
 .section {
   text-align: center;
@@ -76,8 +71,6 @@
   font-weight: 400;
   text-align: center;
 }
-
-
 
 .grid {
   display: flex;
@@ -97,6 +90,7 @@
   text-align: center;
   width: calc(25% - 10px);
   box-sizing: border-box;
+  max-width: 280px; /* ограничение, чтобы не разъезжались на больших экранах */
 }
 
 .contents {
@@ -131,6 +125,45 @@
   margin-top: auto;
   /* кнопка всегда внизу карточки */
 }
+
+
+@media (max-width: 425px) {
+  .naz {
+    min-height: auto;
+    /* убираем фиксированную высоту */
+  }
+
+  .naz_text {
+    min-height: auto;
+    /* убираем фиксированную высоту */
+    margin-top: 25px;
+  }
+}
+
+/* 425px и меньше — по 2 карточки в ряд */
+@media (max-width: 425px) {
+  .cars {
+    width: 48%;      /* чтобы влезло ровно 2 карточки */
+    min-width: 170px; /* не даём ужиматься слишком сильно */
+    max-width: 200px; /* ограничиваем, чтобы не разъезжались */
+    margin: 0 auto;  /* выравнивание */
+  }
+
+  .grid {
+    justify-content: center; /* чтобы карточки красиво центрировались */
+    gap: 15px;
+  }
+}
+
+/* 375px и меньше — 1 карточка в ряд */
+@media (max-width: 375px) {
+  .cars {
+    width: 90%;  /* одна карточка по центру */
+    max-width: 280px;
+  }
+}
+
+
 
 .grid {
   display: flex;

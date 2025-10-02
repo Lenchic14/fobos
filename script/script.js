@@ -80,3 +80,16 @@ function initBurgerMenu(container) {
     }
   });
 }
+
+
+
+
+
+document.querySelectorAll('.cars').forEach(card => {
+  card.addEventListener('click', () => {
+    const link = card.querySelector('a'); 
+    if (link) {
+      window.location.href = link.href;
+    }
+  });
+});
