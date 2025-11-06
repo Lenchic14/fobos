@@ -274,7 +274,8 @@
 
 .submenu_item-divider {
     background-color: #8faac8;
-    font-size: 0.2px;
+    width: 1px;
+    font-size: 0px;
 }
 
 /*Кнопка*/
