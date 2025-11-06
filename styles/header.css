@@ -12,13 +12,13 @@
 }
 
 /*-----Стили для logo_2-----*/
-.header_logo_2 {
+.header_logo {
     display: block;
     width: 140px;
     height: 110px;
 }
 
-.header_logo_2-image {
+.header_logo-icon {
     width: 100%;
 }
 
@@ -31,7 +31,6 @@
     text-decoration: none;
     color: #333;
 }
-
 .address_header:hover {
     color: #0072ab;
 }
@@ -63,83 +62,8 @@
     text-align: center;
     /* На случай переноса текста */
 }
-
 .header_btn:hover {
     background-color: #333;
-    /* Добавляет эффект при наведении */
-}
-
-.btn-info {
-    text-decoration: none;
-    color: #fff;
-}
-/*-----Информационная шапка (КОНЕЦ)-----*/
-
-/*-----Информационная шапка-----*/
-.header_info {
-    display: flex;
-    align-items: center;
-    /* Выравнивание элементов по вертикали */
-    justify-content: space-between;
-    /* Пространство между основными блоками */
-    padding: 12px 5px;
-}
-
-/*-----Стили для logo_2-----*/
-.header_logo_2 {
-    display: block;
-    width: 140px;
-    height: 110px;
-}
-
-.header_logo_2-image {
-    width: 100%;
-}
-
-/*-----Стили для контактов-----*/
-.address_header_city {
-    text-align: center;
-}
-
-.address_header {
-    text-decoration: none;
-    color: #333;
-}
-
-.address_header:hover {
-    color: #0072ab;
-}
-
-/*-----Стили для кнопок-----*/
-.header_info-btn {
-    display: flex;
-    gap: 15px;
-    /* Расстояние между кнопками */
-}
-
-.header_btn {
-    background-color: #0072ab;
-    width: 100px;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    /* Предотвращает перенос текста */
-    display: flex;
-    /* Делаем кнопки flex-контейнерами */
-    align-items: center;
-    /* Центрируем текст по вертикали */
-    justify-content: center;
-    /* Центрируем текст по горизонтали */
-    text-align: center;
-    /* На случай переноса текста */
-}
-
-.header_btn:hover {
-    background-color: #4a5568;
     /* Добавляет эффект при наведении */
 }
 
@@ -186,7 +110,7 @@
 
 /* Планшеты */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .header_logo_2 {
+    .header_logo {
         width: 120px;
         height: 90px;
     }
@@ -226,7 +150,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
 }
 
 /*-----Блок с пунктами меню-----*/
@@ -241,7 +164,6 @@
     /* Центрирует элементы по горизонтали */
     text-align: center;
     /* Выравнивание текста в пунктах меню */
-
     display: flex;
 }
 
@@ -258,7 +180,6 @@
     white-space: nowrap;
     /* Предотвращает перенос текста внутри пунктов */
 }
-
 .menu_item:hover {
     background-color: #0082c3;
 }
@@ -303,19 +224,29 @@
 
 /*-----Левая сторона подменю-----*/
 .submenu_left {
-    padding: 20px;
-    flex: 2;
-    text-align: left;
+  position: relative;
+  padding: 20px;
+  flex: 2;
+  text-align: left;
+  display: flex;
+  flex-direction: column; /* выстраиваем картинку сверху, текст снизу */
+  align-items: flex-start;
 }
 
 /*Картинка*/
 .submenu-image {
-    width: 300px;
-    height: 100%;
-    height: auto;
-    border-radius: 5px;
-    display: block;
+  width: 320px;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 15px; /* отступ между фото и текстом */
 }
+
+/* Текст блок */
+.submenu-text_block {
+  position: static; /* убираем абсолютное позиционирование */
+}
+
 
 /*Текст*/
 .submenu-description {
@@ -334,6 +265,7 @@
     font-weight: 700;
 }
 
+
 /*Разделение*/
 .submenu-divider {
     background-color: #575757;
@@ -349,7 +281,7 @@
 .submenu_btn {
     margin-top: 10px;
     background-color: #0072ab;
-    width: 40%;
+    width: 100%;
     color: #fff;
     border: none;
     padding: 10px 15px;
